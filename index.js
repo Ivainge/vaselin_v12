@@ -8,7 +8,7 @@ let token = config.token;
 let prefix = ".";
 
 bot.on('ready', () => {
-  console.log(`Запустился бот ${bot.user.username}`);
+  console.log(`Запустился ботяра с ником ${bot.user.username}`);
   bot.user.setActivity("by Ivainge  ", {type:"PLAYING"})
 });
 bot.on("message", (message) =>{
@@ -17,10 +17,6 @@ bot.on("message", (message) =>{
           
     }
 });
-
-
-
-
 
 bot.login(token);
 
